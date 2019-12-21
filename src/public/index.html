@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chat con node y socket.io</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h3>Chat con Javascript</h3>
+    </header>
+
+    <div class="container">
+        <div class="chat-container">
+            <div class="chat">
+                <div class="screen">
+                    <div class="mensaje" id="chat">
+                        
+                    </div>
+
+                    <div id="accion"></div>
+                </div>
+            </div>
+
+            <div class="inputs-chat">
+                <form id="message-form" autocomplete="off">
+                    <input type="text" placeholder="Escribe un mensaje" id="mensaje">
+                    <button type="submit">></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="conectados">
+            <h3>Conectados</h3>
+            <br><hr><br>
+
+            <div id="usuarios">
+                
+            </div>
+        </div>
+
+        <form id="login" class="login" autocomplete="off">
+            <label>Nombre de usuario:</label>
+            <br><br>
+            <input type="text" id="usuario">
+            <br><br>
+            <button type="submit">Entrar</button>
+            <div id="error"></div>
+        </form>
+    </div>
+    
+    <script src="/js/jquery.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>

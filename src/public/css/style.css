@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #1a1a1a;
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    padding: 20px 20px;
+    background: #2d2d2d;
+}
+
+header h3{
+    text-align: center;
+    color: grey;
+    font-weight: 300;
+}
+
+/*---------- [ Contenido ] ----------*/
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.chat-container{
+    display: none;
+    width: 75%;
+    height: 500px;
+}
+
+.chat{
+    width: 100%;
+    height: 100%;
+    background: #131313;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.conectados{
+    display: none;
+    width: 20%;
+    height: 500px;
+    background: #131313;
+    border-radius: 3px;
+    padding: 20px 30px;
+    color: #ddd;
+}
+.conectados h3{text-align: center;}
+.conectados ul{text-align: center;}
+
+.inputs-chat{
+    width: 98%;
+    background: #2d2d2d;
+    margin: 10px auto;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.inputs-chat form{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputs-chat form input{
+    display: block;
+    width: 90%;
+    outline: none;
+    border: none;
+    background: none;
+    color: #ccc; 
+}
+
+.inputs-chat form button{
+    font-size: 23px;
+    font-weight: 700;
+    background: none;
+    color: #ddd;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.mensaje, #accion{
+    color: #ddd;
+    margin: 20px 30px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.login{
+    width: 30%;
+    padding: 10px;
+    color: #ddd;
+    text-align: center;
+    background: #131313;
+    border-radius: 10px;
+}
+
+.login label{
+    font-size: 30px;
+}
+
+.login input{
+    width: 70%;
+    padding: 5px;
+    background: #fff;
+    color: black;
+    border: none;
+}
+
+.login button{
+    padding: 10px 20px;
+    color: #fff;
+    background: #2d2d2d;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.login button:hover{
+    background: #363636;
+}
+
+.error{color: red;}
+.private{color: grey;}
+.verde{color: green; font-size: 18px; margin-right: 5px;}
